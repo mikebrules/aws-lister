@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express' ]
+2 info using npm@1.4.3
+3 info using node@v0.11.12-pre
+4 verbose cache add [ 'express', null ]
+5 verbose cache add name=undefined spec="express" args=["express",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express',
+6 verbose parsed url   path: 'express',
+6 verbose parsed url   href: 'express' }
+7 silly lockFile f3c62de4-express express
+8 verbose lock express /root/.npm/f3c62de4-express.lock
+9 silly lockFile f3c62de4-express express
+10 silly lockFile f3c62de4-express express
+11 verbose addNamed [ 'express', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 64a534c1-express express@
+14 verbose lock express@ /root/.npm/64a534c1-express.lock
+15 silly addNameRange { name: 'express', range: '*', hasData: false }
+16 verbose url raw express
+17 verbose url resolving [ 'http://registry.npmjs.org/', './express' ]
+18 verbose url resolved http://registry.npmjs.org/express
+19 info trying registry request attempt 1 at 13:22:48
+20 http GET http://registry.npmjs.org/express
+21 info retry will retry, error on last attempt: Error: getaddrinfo EAI_SYSTEM
+22 info trying registry request attempt 2 at 13:22:58
+23 http GET http://registry.npmjs.org/express
+24 info retry will retry, error on last attempt: Error: getaddrinfo EAI_SYSTEM
+25 info trying registry request attempt 3 at 13:23:58
+26 http GET http://registry.npmjs.org/express
+27 silly lockFile 64a534c1-express express@
+28 silly lockFile 64a534c1-express express@
+29 error Error: getaddrinfo EAI_SYSTEM
+29 error     at Object.exports._errnoException (util.js:745:11)
+29 error     at errnoException (dns.js:46:15)
+29 error     at Object.onlookup [as oncomplete] (dns.js:91:26)
+30 error If you need help, you may report this *entire* log,
+30 error including the npm and node versions, at:
+30 error     <http://github.com/npm/npm/issues>
+31 error System Linux 3.8.0-19-generic
+32 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "express"
+33 error cwd /vagrant/aws-resource-lister/src
+34 error node -v v0.11.12-pre
+35 error npm -v 1.4.3
+36 error syscall getaddrinfo
+37 error code EAI_SYSTEM
+38 error errno EAI_SYSTEM
+39 verbose exit [ 1, true ]
